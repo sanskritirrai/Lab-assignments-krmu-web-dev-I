@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="welcome">Welcome to My Portfolio</h2>
+        <p id="ab">Hello! My name is Sanskriti Rai and I am a web development student. This is my portfolio website.</p>
+        <section id="about">
+            <h3>About Me</h3>
+            <div id="image">
+                <img src="dawg.png" alt="pfp" height="150px" width="150px">
+            </div>
+            <p>I am passionate about learning web development and building creative projects. I have experience in HTML, CSS, and Python.</p>
+        </section>
+        <section id="projects">
+  <h3>My Projects</h3>
+  <dl>
+    <dd>
+      <p class="title">Portfolio Website</p>
+      <p>A personal one-page website to showcase my bio, skills, and contact details.</p>
+    </dd>
+
+    <dd>
+      <p class="title">Birthday Card</p>
+      <p>A creative greeting card webpage with styling and simple animations.</p>
+    </dd>
+
+    <dd>
+      <p class="title">User Form</p>
+      <p>A simple user input form with validation and basic UI.</p>
+    </dd>
+  </dl>
+</section>
+        <section>
+            <h4>Technical Skills</h4>
+            <table border="1">
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Beginner</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td>Intermediate</td>
+                </tr>
+            </table>
+        </section>
+        <footer id="contact">
+            <h3>Contact Me</h3>
+            <form>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" placeholder="Enter your name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" placeholder="Enter your email"></td>
+                    </tr>
+                    <tr>
+                        <td>Message:</td>
+                        <td><textarea placeholder="Write your message"></textarea></td>
+                    </tr>
+                </table>
+                <br>
+                <button>Send</button>
+            </form>
+            <br>
+            <button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'})">Back to Top</button>
+        </footer>
+    </main>
+</body>
+</html>
