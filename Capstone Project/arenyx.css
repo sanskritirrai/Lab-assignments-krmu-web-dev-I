@@ -1,0 +1,614 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    background: #ffffff;
+    color: #000;
+}
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: #000 1px 1px 2px; 
+}
+h2{
+    font-family: 'Unbounded', cursive;
+    color: #000;
+    text-align: center;
+}
+#Join{
+    font-family: 'Unbounded', cursive;
+    color: #ffffff;
+}
+p{
+    font-family: 'Unbounded', cursive;
+    text-shadow: #000 1px 1px 2px; 
+}
+
+.nav-left, .nav-right {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    font-family: 'Troglodyte Pop', sans-serif;
+    color: black;
+}
+.hero-buttons a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+body {
+    background-color: #ffffff;
+    color: #fff;
+}
+
+.cart-link a {
+    color: black; 
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.cart-link a:hover {
+    color: #7a0000; /* dark red hover */
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    height: 90px; /* FIXED */
+    background-color: #ffffff;
+    border-bottom: 3px solid #4a0000;;
+}
+.navbar a {
+    text-decoration: none;      
+    color: #4a0b0b;            
+    font-weight: 700;
+    padding: 10px 0;          
+    position: relative;        
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;              
+    width: 100%;
+    height: 2px;
+    background: #4a0b0b;     
+    transform: scaleX(0);
+    transition: 0.3s ease;
+    transform-origin: left;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+    transform: scaleX(1);
+}
+
+.nav-left, .nav-right {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+
+    font-family: trod;
+}
+
+.nav-left li, .nav-right li {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-left li::after,
+.nav-right li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #4a0000;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+.nav-left li:hover::after,
+.nav-right li:hover::after {
+    width: 100%;
+}
+
+.nav-logo img {
+    height: 50%;                 
+    object-fit: contain;
+    transform: scale(0.39);       
+    transform-origin: center;
+    user-select: none;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+}
+
+.hero-buttons button {
+    margin: 10px;
+}
+
+.btn-red {
+    background: #5b0000;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 12px 35px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-red {
+    background: #5b0000;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 12px 35px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-red:hover {
+    background: #000000;
+    transition: 0.5s ease;
+}
+.btn-outline:hover {
+    background: #000000;
+    color: white;
+    transition: 0.5s ease;
+}
+
+body {
+    font-family: lacquer;
+}
+
+.new-arrivals {
+    padding: 70px 0;
+    background: #ffffff;
+}
+
+.na-title {
+    text-align: center;
+    font-size: 2.6rem;
+    color: #300000;
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.na-grid {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+.na-card {
+    background: #f8f8f8;
+    border: 2px solid #2d0000;
+    padding: 18px;
+    border-radius: 22px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.na-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.na-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.na-card h3 {
+    font-size: 1.2rem;
+    margin: 12px 0 5px;
+    font-weight: 600;
+    color: #330000;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #720000;
+    margin-bottom: 12px;
+}
+
+.na-btn {
+    background: #4d0000;
+    color: white;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.na-btn:hover {
+    background: #6d0000;
+    transform: scale(1.05);
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 100px 0;
+}
+
+.cat-card {
+    background: #330000; /* deep blood red-black */
+    color: #fff;
+    padding: 40px 70px;
+    border-radius: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.cat-card:hover {
+    transform: translateY(-8px) scale(1.04);
+    background: #4d0000;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+}
+
+.bestsellers {
+    padding: 60px 0;
+    background: #fff;
+    font-family: 'Unbounded', cursive;
+}
+
+.bs-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #300000;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.bs-grid {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+p{
+    text-shadow: none;
+}
+.bs-card {
+    background: #f8f8f8;
+    padding: 18px;
+    border-radius: 22px;
+    text-align: center;
+    transition: 0.3s;
+    border: 2px solid #2d0000;
+}
+
+.bs-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.bs-card img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.bs-card h3 {
+    font-size: 1.2rem;
+    margin: 12px 0 5px;
+    font-weight: 600;
+    color: #330000;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #720000;
+    margin-bottom: 12px;
+}
+
+.bs-btn {
+    background: #4d0000;
+    color: #fff;
+    padding: 10px 28px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.bs-btn:hover {
+    background: #6d0000;
+    transform: scale(1.05);
+}
+
+.testimonials {
+    padding: 80px 0;
+}
+
+.test-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.test-card {
+    background: #000000;
+    padding: 30px;
+    width: 260px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.newsletter {
+    text-align: center;
+    padding: 80px 0;
+    background: #2b0000;
+    color: white;
+}
+
+.newsletter input {
+    padding: 12px;
+    width: 260px;
+    border-radius: 30px;
+    border: none;
+    margin-right: 10px;
+}
+
+
+.footer {
+    background: #1a0000;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #ddd;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.shop-layout {
+    display: flex;
+    gap: 40px;
+    padding: 20px 40px;
+}
+
+.filters {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid #7b0000;
+    border-radius: 12px;
+}
+
+.filters h3 {
+    margin-top: 0;
+}
+
+.filters label {
+    display: block;
+    margin: 8px 0;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+
+.products-grid {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    padding: 15px;
+    border-radius: 12px;
+    background: #f7f7f7;
+    text-align: center;
+    border: 1.5px solid #ccc;
+    transition: 0.3s;
+}
+
+.products-grid h4{
+    color: #000;
+    font-weight: bold;
+    margin: 10px 0;
+    font-family: 'lacquer';
+}
+
+.product-card:hover {
+    transform: scale(1.04);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #7b0000;
+}
+
+.add-btn {
+    padding: 10px 18px;
+    border-radius: 30px;
+    background: #7b0000;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #5d0000;
+}
+.shop-header h1 , h3{
+    font-size: 40px;
+    margin: 0;
+    color: #000;
+    text-shadow: none;
+    text-align: center;
+}
+
+.shop-header p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #000;
+    text-shadow: none;
+    text-align: center;
+}
+
+.contact-section {
+    background: #ffffff; 
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+.contact-container {
+    width: 70%;
+    margin: auto;
+    background: #1a0000;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.form-group textarea {
+    height: 130px;
+    resize: none;
+}
+
+.contact-btn {
+    background: #5b0000;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+.contact-btn:hover {
+    background: #000000;
+}
+h3{
+    color: white;
+}
