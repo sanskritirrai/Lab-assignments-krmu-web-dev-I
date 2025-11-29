@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+    <script>
+        const quiz = [
+            { question: "What is the capital of France?", answer: "paris" },
+            { question: "Which planet is known as the Red Planet?", answer: "mars" },
+            { question: "What is 5 + 7?", answer: "12" },
+            { question: "Who wrote 'Romeo and Juliet'?", answer: "shakespeare" },
+            { question: "How many continents are there on Earth?", answer: "7" },
+            { question: "What gas do plants absorb from the atmosphere?", answer: "carbon dioxide" },
+            { question: "Who is known as the father of computers?", answer: "charles babbage" },
+            { question: "What is the boiling point of water in Celsius?", answer: "100" },
+            { question: "Which is the fastest land animal?", answer: "cheetah" },
+            { question: "What color do you get when you mix red and blue?", answer: "purple" },
+            { question: "How many days are in a leap year?", answer: "366" },
+            { question: "What part of the plant conducts photosynthesis?", answer: "leaf" },
+            { question: "Which ocean is the largest?", answer: "pacific" }
+        ];
+
+        function squiz() {
+            let score = 0;
+            
+            alert("Welcome to the Quiz! Let's Begin.");
+            
+            for (let i = 0; i < quiz.length; i++) {
+                const uinput = prompt(quiz[i].question);
+                
+                if (uinput === null) {
+                    alert("Quiz Ended.");
+                    return;
+                }
+                
+                const cinput = uinput.toLowerCase().trim();
+                if (cinput === quiz[i].answer) {
+                    alert("Correct!");
+                    score++;
+                } 
+                else {
+                    alert(`Wrong! The correct answer is: ${quiz[i].answer}`);
+                }
+            }
+            
+            alert(`Quiz Finished! Your final score is ${score} out of ${quiz.length}.`);
+        }
+        squiz();
+
+    </script>
+</body>
+</html>
